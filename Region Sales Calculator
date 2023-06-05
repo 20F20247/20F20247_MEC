@@ -9,10 +9,11 @@ public class j {
     totalSales += sales;
     }
     double averageSales = calculateAverageSales(totalSales, regions.length);
+    //AVERAGE SALES GOAL UPDATED
     System.out.println("Average sales across all regions: " + averageSales);
-    if (averageSales > 3000) {
+    if (averageSales > 2300) {
     System.out.println("Average sales meet the goals.");
-    }else if (averageSales < 3000) {
+    }else if (averageSales < 2300) {
     System.out.println("Average sales don't meet the goals.");
         }
    public static int getSalesData(String region) {
