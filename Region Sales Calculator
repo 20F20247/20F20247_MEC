@@ -13,7 +13,7 @@ public class j {
     System.out.println("Average sales across all regions: " + averageSales);
     if (averageSales > 2300) {
     System.out.println("Average sales meet the goals.");
-    }else if (averageSales < 2300) {
+    }else {
     System.out.println("Average sales don't meet the goals.");
         }
    public static int getSalesData(String region) {
