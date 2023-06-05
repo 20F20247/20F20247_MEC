@@ -1,0 +1,25 @@
+import java.util.Random;
+public class j {
+    public static void main(String[] args) {
+    String[] regions = { "Musandam", "Dhofar", "AlWusta" };
+    int totalSales = 0;
+    for (String region : regions) {
+    int sales = getSalesData(region);
+    System.out.println("Sales in " + region + ": " + sales);
+    totalSales += sales;
+    }
+    double averageSales = calculateAverageSales(totalSales, regions.length);
+    System.out.println("Average sales across all regions: " + averageSales);
+    if (averageSales > 3000) {
+    System.out.println("Average sales meet the goals.");
+    }else if (averageSales < 3000) {
+    System.out.println("Average sales don't meet the goals.");
+        }
+   public static int getSalesData(String region) {
+        Random random = new Random();
+        return random.nextInt(4000) + 1000;
+    }
+   public static double calculateAverageSales(int totalSales, int numRegions) {
+        return (double) totalSales / numRegions;
+    }
+}
